@@ -1,0 +1,90 @@
+
+
+body {
+	background-image: url("../data/Hintergrund.jpg");
+	background-repeat:no-repeat;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+	background-position:center;
+	/*position: fixed;
+	background-size: height 100%; - Testweise verworfen
+	background-repeat: no-repeat; */
+}
+h1{
+	color: #333;
+	text: #CCC;
+	float: inherit;
+	padding-left: 260px;
+	margin-bottom: 350px;
+	font-size: 46px;
+}
+
+.php-form
+{
+	background-image: url("../data/Login-Untergrund.png");
+	width: 1000px;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding-top: 250px;
+	padding-left: 250px;
+	margin-left: 100px;
+	margin-top: -100px;
+	max-width: 100%;
+
+}
+
+
+.contact-form-in {
+	color: rgba(255,191,60, 0,8);
+}
+
+.form-group {
+	position: relative;
+	width: 800px;
+	alignment-adjust:central;
+	margin-bottom: 30px;
+	margin-left: 210px;
+	bottom: 300px;
+}
+
+.form-textarea{
+	background: rgba(255,191,60, 0,8);
+	width: 80%;
+	height: 140px;
+	padding: 10px;
+	border: 1px solid #fffaf8;
+	color: #333;
+}
+
+
+.submit-btn{
+	background: #fff;
+	color: #333;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	position: relative;
+	left: 120px;
+	float: none;
+
+}
+.submit-btn:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+}
+.contact-form-in .form-group{margin-bottom:40px !important;}
+
+.form-name{
+	width: 40%;
+	height: 40px;
+	background-repeat: no-repeat;
+	background-position: 10px center;
+	padding-left: 30px;
+	border: 1px solid #fffaf8;
+	color: #333;
+	background: #FFE3AA;
+}
+.form-Nachname{width:40%; height:40px; background-repeat:no-repeat; background-position:10px center; padding-left:30px; border:1px solid #fffaf8; color:#333; background: #FFE3AA; }
+.form-EMail{width:40%; height:40px; background-repeat:no-repeat; background-position:10px center; padding-left:30px; border:1px solid #fffaf8; color:#333; background:#FFE3AA;}
