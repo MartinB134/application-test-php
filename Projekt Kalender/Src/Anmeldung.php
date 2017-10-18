@@ -3,40 +3,48 @@
 <head>
   <title>Login</title>
   <meta charset="utf-8">
-  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 
-<div class="php-form">
-	<h1>Anmeldung</h1>
-	<form role="form">
-    <form method="post" action="logindaten.php">
-		<div class="form-group" id="form">
+  	<h1>Anmeldung</h1>
 
-			<input type="text" required placeholder="Name" name="Name" id="name" class="form-name">
-			</div>
-			<div class="form-group">
-			<input type="text" required placeholder="Nachname" name="Nachname" id="Nachname" class="form-Nachname">
-            </div>
-			<div class="form-group">
-			<input type="text" required placeholder="E-Mail" name="E-Mail" id="E-Mail" class="form-EMail">
-			</div>
+      <form role="form" method="post" action="logindaten.php">
+  		<div class="form-group" id="form">
 
-			<div class="form-group">
+  			<input type="text" required placeholder="Name" name="Name" id="name" class="form-name">
+  			</div>
 
-			<input type="submit" value="Anmelden" class="submit-btn" name="submit" id="submit">
-	</form></div></div>
+  			<div class="form-group">
+  			<input type="text" required placeholder="Nachname" name="Nachname" id="Nachname" class="form-Nachname">
+        </div>
 
+  			<div class="form-group">
+  			<input type="text" required placeholder="E-Mail" name="E-Mail" id="E-Mail" class="form-EMail">
+  			</div>
+
+  			<div class="form-group">
+        <input type="submit" value="Anmelden" class="submit-btn" name="submit" id="submit">
+        </div>
+  	  </div>
+      </form>
 
   <?php
-  	$verbindung = mysqli_connect("localhost", "root", "", "users")
+
+        $servername = "localhost";
+        $username = "root";
+        $password = "";
+        $dbname = "users";
+
+
+    $verbindung = mysqli_connect("localhost", "root", "")
   	or die("Keine Verbindung zum Server möglich.");
 
   	session_start();
 
   	mysqli_select_db($verbindung, "users")
   	or die("Verbindung zur Datenbank war nicht möglich...");
-  	print_r($_POST);
+  	//print_r($_POST);
 
   	if(isset($_POST["name"])){
 
